@@ -1,0 +1,164 @@
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/static/Inter-Regular.ttf');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 500;
+  src: url('../fonts/static/Inter-Medium.ttf');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 600;
+  src: url('../fonts/static/Inter-SemiBold.ttf');
+}
+@font-face {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/static/Inter-Bold.ttf');
+}
+
+body {
+	margin: 0;
+	font-family: Inter, sans-serif, Arial;
+	background-color: #FAF9FE;
+}
+
+.header-logo {
+	margin: 0 2%;
+	margin-top: -6px;
+}
+
+.dot::before {
+	content:"• ";
+}
+
+.br-10{
+	border-radius: 10px;
+}
+
+.border-right-fa {
+	border-right: 1px solid #FAFAFA;
+}
+
+.dashboard-border-left-chart-1 {
+	border-left: 2px solid #EDF4F4;
+}
+
+.dashboard-border-right-chart-1 {
+	border-right: 2px solid #EDF4F4;
+}
+
+.dashboard-border-bottom-chart-1 {
+	border-bottom: 2px solid #EDF4F4;
+}
+
+.border-bottom-edebeb {
+	border-bottom: 2px solid #EDEBEB;
+}
+
+.notify_numbers {
+	padding: 0.2rem;
+	border-radius: 50px;
+	top: -10px;
+	color: #0E7C85;
+}
+
+.vertical-center {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.vertical-between {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.cursor {
+	cursor: pointer;
+}
+
+.relative {
+	position: relative;
+}
+
+.absolute {
+	position: absolute;
+}
+
+.dashboard-cards {
+	min-height: 104px;
+	border-radius: 10px;
+}
+
+.taxes-right-card {
+	cursor: pointer;
+	min-height: 88px;
+	border-radius: 10px;
+}
+
+.taxes-right-card:hover {
+	background-color: #31B5B5;
+}
+
+.table-no-border {
+	width: 100%;
+	max-width: 100%;
+	margin-bottom: 1rem;
+	background-color: transparent;
+}
+
+.table-no-border td:first-child {
+	border-top-left-radius: .375rem;
+	border-bottom-left-radius: .375rem;
+}
+
+.table-no-border td:last-child {
+	border-top-right-radius: .375rem;
+	border-bottom-right-radius: .375rem;
+}
+
+.table-no-border {
+	border-spacing: 0 10px;
+	border-collapse: separate;
+}
+
+.table-no-border td {
+	padding: .75rem 0.5rem;
+	vertical-align: middle;
+}
+
+.table-no-border th {
+	padding: .75rem 0.5rem;
+	vertical-align: middle;
+}
+
+.hr-line {
+	border-radius: 10px;
+	height: 0.3rem;
+	color: #0E7C85;
+	background: #0E7C85;
+}
+
+.custom-button {
+	padding: 0.175rem 0.50rem;
+	border-radius: 20px;
+}
+
+.custom-button:hover {
+	background-color: #E2ECEB;
+}
+
+/* BOOTSTRAP OVERRIDE */
+.container-fluid {
+	padding-right: 2rem;
+	padding-left: 2rem;
+}
+/* BOOTSTRAP OVERRIDE */
