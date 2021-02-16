@@ -23,9 +23,18 @@ class ProductView(APIView):
 		def put(self, request, pk):
 			product_saved = get_object_or_404(Product.objects.all(), pk=pk)
 			data = request.data.get('product')
+			print(data)
 			serializer = ProductSerializer(instance=product_saved, data=data, partial=True)
 			if serializer.is_valid(raise_exception=True):
 				product_saved = serializer.save()
 			return Response({
 				"success": "Product '{}' updated successfully".format(product_saved.name)
 			})
+
+		def delete(self, request, pk):
+			# Get object with this pk
+			product = get_object_or_404(Product.objects.all(), pk=pk)
+			product.delete()
+			return Response({
+					"message": "Article with id `{}` has been deleted.".format(pk)
+			}, status=204)

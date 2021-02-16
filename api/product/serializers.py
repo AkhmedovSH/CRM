@@ -2,6 +2,7 @@ from rest_framework import serializers
 from .models import Product
 
 class ProductSerializer(serializers.Serializer):
+	id = serializers.IntegerField()
 	name = serializers.CharField(max_length=120)
 	category_id = serializers.IntegerField()
 
