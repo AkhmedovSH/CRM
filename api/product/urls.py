@@ -1,12 +1,11 @@
 from django.urls import path
-from .views import ProductView
+from rest_framework.routers import DefaultRouter
+
+from .views import ProductViewSet
 
 app_name = "products"
 
 # app_name will help us do a reverse look-up latter.
-urlpatterns = [
-    #path('products/', ProductView.as_view()),
-		#path('products/<int:pk>', SingleProductView.as_view())
-		path('articles/', ProductView.as_view({'get': 'list'})),
-    path('articles/<int:pk>', ProductView.as_view({'get': 'retrieve'})),
-]
+router = DefaultRouter()
+router.register(r'articles', ProductViewSet)
+urlpatterns = router.urls
