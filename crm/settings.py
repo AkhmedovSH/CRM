@@ -117,6 +117,12 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+TELEGRAM_BOT = [{
+    'token': '{1655096170:AAH9FUAi-U63sME-kvwQRSAW0lmWptBEz1U}',
+    'register': 'myapp.dispatcher.register',
+    #'webhook': 'https://mydomain.com/telegram_webhook/%s'
+}]
+
 
 # Internationalization
 # https://docs.djangoproject.com/en/3.1/topics/i18n/

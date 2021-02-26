@@ -1,5 +1,7 @@
 appdirs==1.4.4
+APScheduler==3.6.3
 asgiref==3.3.1
+certifi==2020.12.5
 distlib==0.3.1
 Django==3.1.4
 django-shortcuts==1.6
@@ -8,7 +10,10 @@ filelock==3.0.12
 Pillow==8.0.1
 psycopg2==2.8.6
 psycopg2-binary==2.8.6
+python-telegram-bot==13.3
 pytz==2020.5
 six==1.15.0
 sqlparse==0.4.1
+tornado==6.1
+tzlocal==2.1
 virtualenv==20.2.2

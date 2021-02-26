@@ -4,4 +4,5 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
 		path('api/', include('api.product.urls')),
+		path(r'^telegram_webhook/', include('telegram.contrib.django',)),
 ]
